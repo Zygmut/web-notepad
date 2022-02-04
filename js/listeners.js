@@ -1,0 +1,1 @@
+addEvent(window, 'unload', save_settings);

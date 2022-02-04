@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Notepad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Semi responsiveness -->
+    <link rel=" shortcut icon" type="image/png" href="assets/UIB.png">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="">
+    <!-- Buttons -->
+    <form id="buttons">
+        <fieldset>
+            <input id="open-dilg" type="file" name="files[]">
+
+            <a id="opn-btn" title="Ctrl-O">open-btn</a>
+            <a id="save-btn" title="Ctrl-S">save-btn</a>
+
+            <input type="text" placeholder="file-name" id="file-name">
+        </fieldset>
+        <p id="middle-bar">middle-bar</p>
+        <fieldset>
+            <div class="dropdown">
+            <button class="drop-btn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <a id="mkdn-btn">mkdn-btn</a>
+        </fieldset>
+    </form>
+    
+    <!-- Edit box -->
+    <textarea id="edit-box" placeholder="edit-box" autofocus></textarea>
+    
+    <div id="mkdn-box"></div>    
+    
+    <!-- Scripts -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="js/references.js"></script>  
+    <script src="js/utils.js"></script>  
+    <script src="js/settings.js"></script>   <!-- save setting in local storage --> 
+    <script src="js/listeners.js"></script>  
+    <script src="js/dict.js"></script>       <!-- "multilanguaje support" -->
+</body>
+
+</html>
+
+<!-- Hi :) -->
