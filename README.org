@@ -1,0 +1,3 @@
+#+title: Web-notepad
+
+Project status: [[https://sharing.clickup.com/b/h/6-162765235-2/4865d67c0161232][ClickUp]]
