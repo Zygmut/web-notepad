@@ -12,13 +12,15 @@
 
   <body>
     <div class="topnav">
-      <a>Open</a>
-      <a>Save</a>
-      <input type="text" placeholder="file-name" id="file-name">
+      <div class="topnav-left">
+        <a id="opn-btn" title="Ctrl-O">open-btn</a>
+        <a id="save-btn" title="Ctrl-S">save-btn</a>
 
+        <input type="text" placeholder="file-name" id="file-name">
+      </div>
       <div class="topnav-right">
         <div class="dropdown">
-          <button class="dropbtn">Menu</button>
+          <button class="dropbtn">menu-btn</button>
           <div class="dropdown-content">
             <a>Dark mode</a>
             <a>Font family</a>
@@ -28,11 +30,7 @@
       </div>
     </div>
 
-    <textarea
-      id="edit-box"
-      placeholder="Type Here..."
-      autofocus
-    ></textarea>
+    <textarea id="edit-box" placeholder="Type Here..." autofocus></textarea>
 
     <!-- Scripts -->
     <script src="https://apis.google.com/js/client.js"></script>
@@ -41,6 +39,5 @@
     <script src="js/settings.js"></script>
     <script src="js/listeners.js"></script>
     <script src="js/dict.js"></script>
-
   </body>
 </html>
