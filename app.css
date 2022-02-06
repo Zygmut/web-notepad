@@ -1,17 +1,18 @@
 /* Variables */
 :root {
   --navbar_height: 12px;
+  --font_family: "Arial";
 }
 
-html, body {
+html,
+body {
   margin: 0;
-  font-family: Arial;
+  font-family: var(--font_family);
   border-bottom: 1px solid rgba(0, 0, 15, 0.3);
   padding: 0;
   height: 100%;
   overflow: hidden;
   position: relative;
-  font-family: sans-serif;
 }
 
 :focus {
@@ -106,11 +107,12 @@ html, body {
   font-size: 17px;
   border-right: 1px dashed #b2b2b7;
   box-sizing: border-box;
+  font-family: var(--font_family);
 }
 
 #edit-box {
   width: 100%;
-  height: calc(100% - 40px);
+  height: calc(95% - var(--navbar_height));
   margin: 0;
   padding: 10px;
   overflow: auto;
@@ -118,6 +120,6 @@ html, body {
   white-space: pre-wrap;
   border: none;
   resize: none;
-  font-family: sans-serif;
+  font-family: var(--font_family);
   box-sizing: border-box;
 }
