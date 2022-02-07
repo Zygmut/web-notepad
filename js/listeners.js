@@ -17,7 +17,7 @@ addEvent(document.getElementById("save-btn"), 'click', function () {
     filename = 'untitled.txt';
   }
   document.getElementById("save-btn").download = filename;
-  document.getElementById("save-btn").href = 'data:text/octet-stream,' + escape(document.getElementById("file-name").value) + "\n" + escape(document.getElementById("edit-box").value);
+  document.getElementById("save-btn").href = 'data:text/octet-stream,' + escape(document.getElementById("edit-box").value);
 });
 
 addEvent(document.getElementById("open-dilg"), 'change', open_file);
