@@ -1,21 +1,28 @@
 // Store icon mode
 let iconMode = localStorage.getItem("icon_mode");
 const iconToggle = document.getElementById("ico-btn");
-let icoItems = ["open-btn", "save-btn", "menu-btn", "dark-btn", "ico-btn"]
+let icoItems = ["open-btn", "save-btn", "menu-btn", "dark-btn", "ico-btn"];
 
 // Apply icon mode
 const enableIco = () => {
   localStorage.setItem("icon_mode", "enabled");
   for (let i = 0; i < icoItems.length; i++) {
-      const element = array[i];
-      
+    document.getElementById(icoItems[i]).innerHTML =
+      document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
+      "</svg> ";
   }
 };
 
 // Disable icon mode
 const disableIco = () => {
-    localStorage.setItem("icon_mode", null);
-
+  localStorage.setItem("icon_mode", null);
+  for (let i = 0; i < icoItems.length; i++) {
+    document.getElementById(icoItems[i]).innerHTML =
+      document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
+      icoItems[i] +
+      "</svg>" +
+      icoItems[i];
+  }
 };
 
 // Toggle ico
