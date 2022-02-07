@@ -126,7 +126,14 @@ body {
 }
 
 .dropdown:hover .dropdown-content {
+  animation-duration: 0.2s;
+  animation-name: example;
   display: block;
+}
+
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .dropdown-content a {
