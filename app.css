@@ -19,6 +19,13 @@ body {
   outline: 0;
 }
 
+/* Save function */
+#open-dilg {
+  position: fixed;
+  opacity: 0;
+  z-index: -100;
+}
+
 /* Topnav */
 .topnav {
   overflow: hidden;
@@ -36,10 +43,12 @@ body {
   font-size: var(--font_size);
   padding: var(--navbar_height) 16px; 
   text-align: center;
+  text-decoration: none;
 }
 
 :root [id*=btn]:hover {
   background-color: #ddd;
+  cursor: pointer;
 }
 
 .topnav a {
