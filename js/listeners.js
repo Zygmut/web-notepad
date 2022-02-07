@@ -10,3 +10,12 @@ addEvent(document.getElementById("open-btn"), 'click', function () {
   }
   return false;
 });
+
+addEvent(save_btn, 'click', function () {
+  var filename = file_name.value;
+  if (filename == '') {
+    filename = 'untitled.txt';
+  }
+  save_btn.download = filename;
+  save_btn.href = 'data:text/octet-stream,' + escape(edit_box.value);
+});
