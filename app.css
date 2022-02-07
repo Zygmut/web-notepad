@@ -72,7 +72,7 @@ body {
 }
 
 .topnav-right button {
-  border-left: 1px dashed #b2b2b7;
+  border-left: 1px dashed #b2b6b7;
 }
 
 /* Topnav Left */
@@ -80,7 +80,7 @@ body {
   float: left;
 }
 
-.topnav-left button, input {
+.topnav-left [class*=button] {
   border-right: 1px dashed #b2b2b7;
 }
 
