@@ -5,25 +5,29 @@
   --font_size: 25px;
 
   /* Light theme (default) */
-  --accent: #61b0f1;  /* Hover color */
-  --bg: #f5f5f5;      /* Background color */
-  --sbg: #e4e6e6;     /* Cards color */
-  --fg: #3a3a3a;      /* Foreground color */
-  --sfg: #8a8a8a;     /* Sceondary Foreground color */
+  --accent: #61b0f1; /* Hover color */
+  --bg: #f5f5f5; /* Background color */
+  --sbg: #e4e6e6; /* Cards color */
+  --fg: #3a3a3a; /* Foreground color */
+  --sfg: #8a8a8a; /* Sceondary Foreground color */
 
-  --icon_size: 3vh ;
+  --icon_size: 3vh;
 }
 
 .darktheme {
-  --accent: #61b0f1;  /* Hover color */
-  --bg: #19171a;      /* Background color */
-  --sbg: #201e21;     /* Cards color */
-  --fg: #d8dee9;      /* Foreground color */
-  --sfg: #3a3a3a;     /* Secondary Foreground color */
+  --accent: #61b0f1; /* Hover color */
+  --bg: #19171a; /* Background color */
+  --sbg: #201e21; /* Cards color */
+  --fg: #d8dee9; /* Foreground color */
+  --sfg: #3a3a3a; /* Secondary Foreground color */
+}
+* {
+  transition: 0.2s ease-in-out;
 }
 
 html,
 body {
+  background-color: var(--sbg);
   margin: 0;
   font-family: var(--font_family);
   padding: 0;
@@ -56,7 +60,8 @@ body {
 /* Topnav */
 .topnav {
   overflow: hidden;
-  border-bottom: 1px solid var(--sfg);
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--fg);
 }
 
 /* Button config */
@@ -69,7 +74,7 @@ body {
   outline: none;
   font-family: var(--font_family);
   font-size: var(--font_size);
-  padding: var(--navbar_height) 16px; 
+  padding: var(--navbar_height) 16px;
   text-align: center;
   text-decoration: none;
 }
@@ -94,17 +99,18 @@ body {
 }
 
 /* Topnav Left */
-.topnav-left{
+.topnav-left {
   float: left;
 }
 
-.topnav-left [class*=button] {
+.topnav-left [class*="button"] {
   border-right: 1px dashed var(--sfg);
 }
 
 .topnav-left input {
   border: none;
-  color: #000000;
+  background-color: var(--bg);
+  color: var(--fg);
   text-align: left;
   padding: var(--navbar_height) 16px;
   border-right: 1px dashed var(--sfg);
@@ -129,6 +135,8 @@ body {
 
 /* Text box */
 #edit-box {
+  background-color: var(--sbg);
+  color: var(--fg);
   width: 100%;
   height: calc(95% - var(--navbar_height));
   margin: 0;

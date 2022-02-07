@@ -1,44 +1,31 @@
 // Store the theme
-let darkTheme = localStorage.getItem('dark_theme');
-const themeToggle = document.querySelector('#themeButton');
-const bodyBackground = document.getElementById('#body');
+let darkTheme = localStorage.getItem("dark_theme");
+const themeToggle = document.getElementById("dark-btn");
+const bodyBackground = document.getElementById("#body");
 
 // Apply Dark theme
 const enableDark = () => {
-  document.body.classList.add('darktheme');
-  localStorage.setItem('darkTheme', 'enabled');
-  themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="sun"></i>`;
+  document.body.classList.add("darktheme");
+  localStorage.setItem("dark_theme", "enabled");
+  themeToggle.innerHTML = `<a class="buton" id="dark-btn"><i class="icon" id="dark" icon-name="sun"></i>Light mode</a>`;
   lucide.createIcons();
 };
 
 // Remove Dark theme
 const disableDark = () => {
-  document.body.classList.remove('darktheme');
-  localStorage.setItem('darkTheme', null);
-  themeToggle.innerHTML = `<i id="themeButton__icon" icon-name="moon"></i>`;
+  document.body.classList.remove("darktheme");
+  localStorage.setItem("dark_theme", null);
+  themeToggle.innerHTML = `<a class="buton" id="dark-btn"><i class="icon" id="dark" icon-name="moon"></i>Dark mode</a>`;
   lucide.createIcons();
 };
 
 //Toggle theme
-if (darkTheme === 'enabled') {
+if (darkTheme === "enabled") {
   // Temporarily disable transitions when changing theme on startup
-  document.body.classList.add('notransition');
+  document.body.classList.add("notransition");
   enableDark();
   document.body.offsetHeight; // Trigger reflow to flush CSS changes
-  document.body.classList.remove('notransition');
+  document.body.classList.remove("notransition");
 } else {
   disableDark();
-}
-
-themeToggle.addEventListener('click', () => {
-  darkTheme = localStorage.getItem('darkTheme');
-  if (darkTheme !== 'enabled') {
-    enableDark();
-  } else {
-    disableDark();
-  }
-});
-
-if (CONFIG.imageBackground) {
-  document.body.classList.add('withImageBackground');
 }

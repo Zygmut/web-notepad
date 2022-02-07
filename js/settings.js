@@ -1,4 +1,4 @@
-var save_elements = ['file-name', 'edit-box']
+var save_elements = ['file-name', 'edit-box', ]
 
 
 function save_settings(){
