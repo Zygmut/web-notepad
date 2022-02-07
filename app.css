@@ -19,11 +19,19 @@ body {
   outline: 0;
 }
 
+.icon {
+  display: inline-flex;
+  width: var(--font_size);
+  right: var(--font_size);
+  color: black;
+  margin: 3px 10px 0px 0px;
+  float: left;
+}
+
 /* Save function */
 #open-dilg {
   position: fixed;
   opacity: 0;
-  z-index: -100;
 }
 
 /* Topnav */
@@ -34,9 +42,11 @@ body {
 }
 
 /* Button config */
-:root [id*=btn] {
+.button {
   background-color: #e5e5e5;
   color: black;
+  justify-content: center;
+  align-items: center;
   border: none;
   outline: none;
   font-family: var(--font_family);
@@ -46,7 +56,7 @@ body {
   text-decoration: none;
 }
 
-:root [id*=btn]:hover {
+.button:hover {
   background-color: #ddd;
   cursor: pointer;
 }
@@ -61,7 +71,7 @@ body {
   float: right;
 }
 
-.topnav-right [class*=btn] {
+.topnav-right button {
   border-left: 1px dashed #b2b2b7;
 }
 
@@ -70,7 +80,7 @@ body {
   float: left;
 }
 
-.topnav-left [id*=btn], input {
+.topnav-left button, input {
   border-right: 1px dashed #b2b2b7;
 }
 
@@ -98,7 +108,6 @@ body {
 .dropdown-content a {
   float: none;
 }
-
 
 /* Text box */
 #edit-box {

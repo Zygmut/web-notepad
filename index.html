@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Notepad</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel=" shortcut icon" type="image/png" href="assets/UIB.png">
-    <link rel="stylesheet" href="app.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <body>
-    <div class="topnav">
-      <div class="topnav-left">
-        <input id="open-dilg" type="file" name="files[]">
+  <title>Notepad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel=" shortcut icon" type="image/png" href="assets/UIB.png">
+  <link rel="stylesheet" href="app.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-        <a id="open-btn" title="Ctrl-O">open-btn</a>
-        <a id="save-btn" title="Ctrl-S">save-btn</a>
+</head>
 
-        <input type="text" placeholder="file-name" id="file-name">
-      </div>
-      <div class="topnav-right">
-        <div class="dropdown">
-          <button class="drop-btn" id="menu-btn">menu-btn</button>
-          <div class="dropdown-content">
-            <a id="dark-btn">Dark mode</a>
-            <a id="FF-btn">Font family</a>
-            <a id="FS-btn">Font size</a>
-          </div>
+<body>
+  <div class="topnav">
+    <div class="topnav-left">
+      <input id="open-dilg" type="file" name="files[]">
+
+      <a class="button" id="open-btn" title="Ctrl-O"><i icon-name="moon" class="icon"></i>open-btn</a>
+      <a class="button" id="save-btn" title="Ctrl-S">save-btn</a>
+
+      <input type="text" placeholder="file-name" id="file-name">
+    </div>
+    <div class="topnav-right">
+      <div class="dropdown">
+        <button class="button" id="menu-btn"><i class="icon" icon-name="menu"></i>menu-btn</button>
+        <div class="dropdown-content">
+          <a class="button" id="dark-btn"><i class="icon" icon-name="moon"></i>Dark mode</a>
+          <a class="button" id="FF-btn">Font family</a>
+          <a class="button" id="FS-btn">Font size</a>
         </div>
       </div>
     </div>
+  </div>
 
-    <textarea id="edit-box" placeholder="Type Here..." autofocus></textarea>
+  <textarea id="edit-box" placeholder="Type Here..." autofocus></textarea>
 
-    <!-- Scripts -->
-    <script src="https://apis.google.com/js/client.js"></script>
-    <script src="js/references.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/listeners.js"></script>
-    <script src="js/dict.js"></script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://apis.google.com/js/client.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/listeners.js"></script>
+  <script src="js/dict.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
 </html>
