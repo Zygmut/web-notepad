@@ -147,7 +147,7 @@ body {
   width: 100%;
   height: calc(95% - var(--navbar_height));
   margin: 0;
-  padding: 10px 25vw;
+  padding: 10px 15vw;
   overflow: auto;
   white-space: pre-wrap;
   border: none;
