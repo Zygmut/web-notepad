@@ -3,6 +3,23 @@
   --navbar_height: 12px;
   --font_family: "Arial";
   --font_size: 25px;
+
+  /* Light theme (default) */
+  --accent: #61b0f1;  /* Hover color */
+  --bg: #19171a;      /* Background color */
+  --sbg: #201e21;     /* Cards color */
+  --fg: #d8dee9;      /* Foreground color */
+  --sfg: #3a3a3a;     /* Secondary Foreground color */
+
+  --icon_size: 3vh ;
+}
+
+.darktheme {
+  --accent: #61b0f1;  /* Hover color */
+  --bg: #19171a;      /* Background color */
+  --sbg: #201e21;     /* Cards color */
+  --fg: #d8dee9;      /* Foreground color */
+  --sfg: #3a3a3a;     /* Secondary Foreground color */
 }
 
 html,
@@ -19,12 +36,13 @@ body {
   outline: 0;
 }
 
+/* Icons */
 .icon {
   display: inline-flex;
-  width: var(--font_size);
-  right: var(--font_size);
+  width: var(--icon_size);
+  right: var(--icon_size);
   color: black;
-  margin: 3px 10px 0px 0px;
+  margin: 3px 1vh 0px 0px;
   float: left;
 }
 
