@@ -6,10 +6,10 @@
 
   /* Light theme (default) */
   --accent: #61b0f1;  /* Hover color */
-  --bg: #19171a;      /* Background color */
-  --sbg: #201e21;     /* Cards color */
-  --fg: #d8dee9;      /* Foreground color */
-  --sfg: #3a3a3a;     /* Secondary Foreground color */
+  --bg: #f5f5f5;      /* Background color */
+  --sbg: #e4e6e6;     /* Cards color */
+  --fg: #3a3a3a;      /* Foreground color */
+  --sfg: #8a8a8a;     /* Sceondary Foreground color */
 
   --icon_size: 3vh ;
 }
@@ -41,7 +41,7 @@ body {
   display: inline-flex;
   width: var(--icon_size);
   right: var(--icon_size);
-  color: black;
+  color: var(--fg);
   margin: 3px 1vh 0px 0px;
   float: left;
 }
@@ -50,19 +50,19 @@ body {
 #open-dilg {
   position: fixed;
   opacity: 0;
+  z-index: -100;
 }
 
 /* Topnav */
 .topnav {
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #b2b2b7;
+  border-bottom: 1px solid var(--sfg);
 }
 
 /* Button config */
 .button {
-  background-color: #e5e5e5;
-  color: black;
+  background-color: var(--bg);
+  color: var(--fg);
   justify-content: center;
   align-items: center;
   border: none;
@@ -75,7 +75,7 @@ body {
 }
 
 .button:hover {
-  background-color: #ddd;
+  background-color: var(--sbg);
   cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .topnav-right button {
-  border-left: 1px dashed #b2b6b7;
+  border-left: 1px dashed var(--sfg);
 }
 
 /* Topnav Left */
@@ -99,7 +99,7 @@ body {
 }
 
 .topnav-left [class*=button] {
-  border-right: 1px dashed #b2b2b7;
+  border-right: 1px dashed var(--sfg);
 }
 
 .topnav-left input {
@@ -107,7 +107,7 @@ body {
   color: #000000;
   text-align: left;
   padding: var(--navbar_height) 16px;
-  border-right: 1px dashed #b2b2b7;
+  border-right: 1px dashed var(--sfg);
   font-size: var(--font_size);
   font-family: var(--font_family);
 }
