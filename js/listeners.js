@@ -2,6 +2,8 @@ addEvent(window, "unload", save_settings);
 
 addEvent(document.getElementById("edit-box"), "input", save_settings);
 
+addEvent(document.getElementById("file-name"), "input", save_settings);
+
 addEvent(document.getElementById("open-btn"), "click", function () {
   if (window.File && window.FileReader && window.FileList && window.Blob) {
     document.getElementById("open-dilg").click();
@@ -30,5 +32,14 @@ addEvent(document.getElementById("dark-btn"), "click", function () {
     enableDark();
   } else {
     disableDark();
+  }
+});
+
+addEvent(document.getElementById("ico-btn"), "click", function () {
+  iconMode = localStorage.getItem("icon_mode");
+  if (iconMode !== "enabled") {
+    enableIco();
+  } else {
+    disableIco();
   }
 });
