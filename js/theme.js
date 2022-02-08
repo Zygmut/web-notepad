@@ -5,12 +5,12 @@ const themeToggle = document.getElementById("dark-btn");
 // Apply Dark theme
 const enableDark = () => {
   document.body.classList.add("darktheme");
-  localStorage.setItem("dark_theme", "enabled");
+  localStorage.setItem("dark_theme", true);
   themeToggle.innerHTML = `<i class="icon" id="dark" icon-name="sun"></i>`;
-  if (localStorage.getItem("icon_mode") != "enabled") {
-    themeToggle.innerHTML += "Light mode";
-  } else {
+  if (localStorage.getItem("icon_mode")) {
     themeToggle.innerHTML += " ";
+  } else {
+    themeToggle.innerHTML += "Light mode";
   }
   lucide.createIcons();
 };
@@ -18,18 +18,18 @@ const enableDark = () => {
 // Remove Dark theme
 const disableDark = () => {
   document.body.classList.remove("darktheme");
-  localStorage.setItem("dark_theme", null);
+  localStorage.setItem("dark_theme", false);
   themeToggle.innerHTML = `<i class="icon" id="dark" icon-name="moon"></i>`;
-  if (localStorage.getItem("icon_mode") != "enabled") {
-    themeToggle.innerHTML += "Dark mode";
-  } else {
+  if (localStorage.getItem("icon_mode")) {
     themeToggle.innerHTML += " ";
+  } else {
+    themeToggle.innerHTML += "Dark mode";
   }
   lucide.createIcons();
 };
 
 //Toggle theme
-if (darkTheme === "enabled") {
+if (darkTheme) {
   // Temporarily disable transitions when changing theme on startup
   document.body.classList.add("notransition");
   enableDark();

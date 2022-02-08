@@ -32,18 +32,21 @@ addEvent(document.getElementById("open-dilg"), "change", open_file);
 
 addEvent(document.getElementById("dark-btn"), "click", function () {
   darkTheme = localStorage.getItem("dark_theme");
-  if (darkTheme !== "enabled") {
-    enableDark();
-  } else {
+  console.log(darkTheme);
+  if (darkTheme === 'true') {
+    console.log("disable");
     disableDark();
+  } else {
+    console.log("enable");
+    enableDark();
   }
 });
 
 addEvent(document.getElementById("ico-btn"), "click", function () {
   iconMode = localStorage.getItem("icon_mode");
-  if (iconMode !== "enabled") {
-    enableIco();
-  } else {
+  if (iconMode === 'true') {
     disableIco();
+  } else {
+    enableIco();
   }
 });

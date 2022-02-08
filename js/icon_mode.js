@@ -5,7 +5,7 @@ let icoItems = ["open-btn", "save-btn", "menu-btn", "dark-btn", "ico-btn"];
 
 // Apply icon mode
 const enableIco = () => {
-  localStorage.setItem("icon_mode", "enabled");
+  localStorage.setItem("icon_mode", true);
   for (let i = 0; i < icoItems.length; i++) {
     document.getElementById(icoItems[i]).innerHTML =
       document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
@@ -15,7 +15,7 @@ const enableIco = () => {
 
 // Disable icon mode
 const disableIco = () => {
-  localStorage.setItem("icon_mode", null);
+  localStorage.setItem("icon_mode", false);
   for (let i = 0; i < icoItems.length; i++) {
     document.getElementById(icoItems[i]).innerHTML =
       document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
@@ -25,7 +25,7 @@ const disableIco = () => {
 };
 
 // Toggle ico
-if (iconMode == "enabled") {
+if (iconMode) {
   // Temporarily disable transitions when changing theme on startup
   document.body.classList.add("notransition");
   enableIco();
