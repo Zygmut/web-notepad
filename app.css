@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-  --navbar_height: 12px;
+  --navbar_height: 50px;
   --font_family: "Arial";
   --font_size: 25px;
 
@@ -21,6 +21,7 @@
   --fg: #d8dee9; /* Foreground color */
   --sfg: #3a3a3a; /* Secondary Foreground color */
 }
+
 * {
   transition: 0.2s ease-in-out;
 }
@@ -74,7 +75,7 @@ body {
   outline: none;
   font-family: var(--font_family);
   font-size: var(--font_size);
-  padding: var(--navbar_height) 16px;
+  padding: calc(calc(var(--navbar_height) - var(--font_size))/2) 16px;
   text-align: center;
   text-decoration: none;
 }
@@ -112,7 +113,7 @@ body {
   background-color: var(--bg);
   color: var(--fg);
   text-align: left;
-  padding: var(--navbar_height) 16px;
+  padding: calc(calc(var(--navbar_height) - var(--font_size))/2) 16px;
   border-right: 1px dashed var(--sfg);
   font-size: var(--font_size);
   font-family: var(--font_family);
