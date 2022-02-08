@@ -1,7 +1,6 @@
 var save_elements = ['file-name', 'edit-box']
 
 function save_settings() {
-        console.log("gola")
     for (let i = 0; i < save_elements.length; i++) {
         localStorage.setItem(save_elements[i], document.getElementById(save_elements[i]).value);
     }
@@ -20,6 +19,14 @@ function load_settings() {
     }
 }
 
+function load_config(){
+    Object.keys(CONFIG).forEach(function(key){
+        console.log(CONFIG[key]);
+    })
+    document.documentElement.style.setProperty('--animation_speed', CONFIG.animation_speed);
+}
+
 if (window.localStorage) {
+    load_config();
     load_settings();
 }

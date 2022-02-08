@@ -14,6 +14,7 @@ const CONFIG = {
     font_family: 'Arial',
     font_size: '25px',
 
+    /*!!THEMES ARE, FOR NOW, UNSUPPORTED !!*/
     // Light theme
     L_accent: '#61b0f1',  /* Hover color */
     L_bg: '#f5f5f5',      /* Background color */
@@ -29,7 +30,7 @@ const CONFIG = {
     D_sfg: '#3a3a3a',     /* Sceondary Foreground color */
 
     // Misc
-    animation_speed: '0.3s',
+    animation_speed: '0.2s',
     icon_size: '3vh',
     navbar_height: '50px'
 }
