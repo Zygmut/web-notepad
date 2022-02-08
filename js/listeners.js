@@ -34,10 +34,8 @@ addEvent(document.getElementById("dark-btn"), "click", function () {
   darkTheme = localStorage.getItem("dark_theme");
   console.log(darkTheme);
   if (darkTheme === 'true') {
-    console.log("disable");
     disableDark();
   } else {
-    console.log("enable");
     enableDark();
   }
 });
