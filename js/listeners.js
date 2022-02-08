@@ -1,8 +1,12 @@
 addEvent(window, "unload", save_settings);
 
-addEvent(document.getElementById("edit-box"), "input", save_settings);
+addEvent(document.getElementById("edit-box"), "input", function () {
+  localStorage.setItem("edit-box", document.getElementById("edit-box").value);
+});
 
-addEvent(document.getElementById("file-name"), "input", save_settings);
+addEvent(document.getElementById("file-name"), "input", function(){
+  localStorage.setItem("file-name", document.getElementById("file-name").value);
+});
 
 addEvent(document.getElementById("open-btn"), "click", function () {
   if (window.File && window.FileReader && window.FileList && window.Blob) {
