@@ -47,7 +47,7 @@ body {
   width: var(--icon_size);
   right: var(--icon_size);
   color: var(--fg);
-  margin: 3px 1vh 0px 0px;
+  margin: 3px 0.5vh 0px 1vh;
   float: left;
 }
 

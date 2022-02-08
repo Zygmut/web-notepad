@@ -19,7 +19,6 @@ const disableIco = () => {
   for (let i = 0; i < icoItems.length; i++) {
     document.getElementById(icoItems[i]).innerHTML =
       document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
-      icoItems[i] +
       "</svg>" +
       icoItems[i];
   }
