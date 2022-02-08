@@ -4,6 +4,8 @@
   --font_family: "Arial";
   --font_size: 25px;
 
+  --animation_speed: 0.3s;
+
   /* Light theme (default) */
   --accent: #61b0f1; /* Hover color */
   --bg: #f5f5f5; /* Background color */
@@ -22,12 +24,9 @@
   --sfg: #3a3a3a; /* Secondary Foreground color */
 }
 
-* {
-  transition: 0.2s ease-in-out;
-}
-
 html,
 body {
+  transition: var(--animation_speed) ease-in-out;
   background-color: var(--sbg);
   margin: 0;
   font-family: var(--font_family);
@@ -46,7 +45,7 @@ body {
   display: inline-flex;
   width: var(--icon_size);
   right: var(--icon_size);
-  color: var(--fg);
+  color: inherit;
   margin: 3px 0.5vh 0px 1vh;
   float: left;
 }
@@ -60,6 +59,7 @@ body {
 
 /* Topnav */
 .topnav {
+  transition: var(--animation_speed) ease-in-out;
   overflow: hidden;
   background-color: var(--bg);
   border-bottom: 1px solid var(--fg);
@@ -67,6 +67,7 @@ body {
 
 /* Button config */
 .button {
+  transition: var(--animation_speed) ease-in-out;
   background-color: var(--bg);
   color: var(--fg);
   justify-content: center;
@@ -81,6 +82,7 @@ body {
 }
 
 .button:hover {
+  color: var(--accent);
   background-color: var(--sbg);
   cursor: pointer;
 }
@@ -109,6 +111,7 @@ body {
 }
 
 .topnav-left input {
+  transition: var(--animation_speed) ease-in-out;
   border: none;
   background-color: var(--bg);
   color: var(--fg);
@@ -143,6 +146,7 @@ body {
 
 /* Text box */
 #edit-box {
+  transition: var(--animation_speed) ease-in-out;
   background-color: var(--sbg);
   color: var(--fg);
   width: 100%;
