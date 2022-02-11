@@ -19,12 +19,17 @@ function load_settings() {
     }
 }
 
+/* Utility function to modify some value in css :root 
+    - property: :root variable name e.g --font_size
+    - set     : value that property will take
+*/
 function modify_css(property, set){
     document.documentElement.style.setProperty(property, set);
 }
 
 function load_config(){
     // Language
+    localStorage.setItem("language", CONFIG.language);
 
     // Dark and icon mode
     localStorage.setItem("dark_mode", CONFIG.dark_mode);
