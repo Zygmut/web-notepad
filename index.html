@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notepad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel=" shortcut icon" type="image/png" href="assets/UIB.png" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-  <title>Notepad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=" shortcut icon" type="image/png" href="assets/UIB.png">
-  <link rel="stylesheet" href="app.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <body>
+    <div class="topnav">
+      <div class="topnav-left">
+        <input id="open-dilg" type="file" name="files[]" />
 
-</head>
+        <a class="button" id="open_btn" title="Ctrl-O">
+          <i class="icon" icon-name="folder-open"></i>open_btn</a
+        >
+        <a class="button" id="save_btn" title="Ctrl-S">
+          <i class="icon" icon-name="save"></i>save_btn</a
+        >
 
-<body>
-  <div class="topnav">
-    <div class="topnav-left">
-      <input id="open-dilg" type="file" name="files[]">
-
-      <a class="button" id="open_btn" title="Ctrl-O">
-        <i class="icon" icon-name="folder-open"></i>open_btn</a>
-      <a class="button" id="save_btn" title="Ctrl-S">
-        <i class="icon" icon-name="save"></i>save_btn</a>
-
-      <input type="text" name="file_name" placeholder="file_name" id="file_name">
-    </div>
-    <div class="topnav-right">
-      <div class="dropdown">
-        <button class="button" id="menu_btn">
-          <i class="icon" icon-name="menu"></i>menu_btn</button>
-        <div class="dropdown-content">
-          <a class="button" id="dark_btn">
-            <i class="icon" icon-name="moon"></i>Dark mode</a>
-          <a class="button" id="ico_btn">
-            <i class="icon" icon-name="inspect"></i>Icon mode</a>
-          <a class="button" id="lan_btn">
-            <i class="icon" icon-name="languages"></i>Language</a>
+        <input
+          type="text"
+          name="file_name"
+          placeholder="file_name"
+          id="file_name"
+        />
+      </div>
+      <div class="topnav-right">
+        <div class="dropdown">
+          <button class="button" id="menu_btn">
+            <i class="icon" icon-name="menu"></i
+            >menu_btn
+          </button>
+          <div class="dropdown-content">
+            <a class="button" id="dark_btn">
+              <i class="icon" icon-name="moon"></i>Dark mode</a
+            >
+            <a class="button" id="ico_btn">
+              <i class="icon" icon-name="inspect"></i>Icon mode</a
+            >
+            <a class="button" id="lan_btn">
+              <img class="icon" src="assets/icons/catalan_flag.png"></a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <textarea id="edit_box" placeholder="" autofocus></textarea>
+    <textarea id="edit_box" placeholder="" autofocus></textarea>
 
-  <!-- config -->
-  <script src="config.js"></script>
+    <!-- config -->
+    <script src="config.js"></script>
 
-  <!-- Scripts -->
-  <script src="https://apis.google.com/js/client.js"></script>
-  <script src="js/utils.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/listeners.js"></script>
-  <script src="js/language.js"></script>
-  <script src="js/theme.js"></script>
-  <script src="js/icon_mode.js"></script>
-  <script>lucide.createIcons();</script>
-  <script>set_names()</script>
-</body>
-
+    <!-- Scripts -->
+    <script src="https://apis.google.com/js/client.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/listeners.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/icon_mode.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      set_names();
+    </script>
+  </body>
 </html>

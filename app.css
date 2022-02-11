@@ -49,7 +49,6 @@ body {
 .icon {
   display: inline-flex;
   width: var(--icon_size);
-  right: var(--icon_size);
   color: inherit;
   margin: 3px 0.5vh 0px 1vh;
   float: left;

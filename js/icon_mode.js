@@ -5,9 +5,8 @@ let icoItems = [
   "save_btn",
   "menu_btn",
   "dark_btn",
-  "ico_btn",
-  "lan_btn",
-];
+  "ico_btn"
+  ];
 
 // Apply icon mode
 const enableIco = () => {
@@ -17,6 +16,8 @@ const enableIco = () => {
       document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
       "</svg> ";
   }
+  // Change flag
+  document.getElementById("lan_btn").innerHTML = `<img class="icon" src="` + get_name("image_path") + `"> `
 };
 
 // Disable icon mode
@@ -28,6 +29,9 @@ const disableIco = () => {
       "</svg>" +
       get_name(icoItems[i]);
   }
+  
+  // Change flag
+   document.getElementById("lan_btn").innerHTML = `<img class="icon" src="` + get_name("image_path") + `">` + get_name("lan_btn")
 };
 
 // Toggle ico

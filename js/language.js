@@ -9,7 +9,8 @@ const lang_es = new Map([
   ["ico_btn", "Iconos"],
   ["lan_btn", "Español"],
   ["edit_box", "Escribe aqui..."],
-  ["file_name", "Nombre del archivo"]
+  ["file_name", "Nombre del archivo"],
+  ["image_path", "assets/icons/spain_flag.png"]
 ]);
 
 const lang_en = new Map([
@@ -21,7 +22,8 @@ const lang_en = new Map([
   ["ico_btn", "Icons"],
   ["lan_btn", "English"],
   ["edit_box", "Type here..."],
-  ["file_name", "File name"]
+  ["file_name", "File name"],
+  ["image_path", "assets/icons/united_kingdom_flag.png"]
 ]);
 
 const lang_cat = new Map([
@@ -33,7 +35,8 @@ const lang_cat = new Map([
   ["ico_btn", "Icones"],
   ["lan_btn", "Català"],
   ["edit_box", "Escriu aquí..."],
-  ["file_name", "Nom del archiu"]
+  ["file_name", "Nom del archiu"],
+  ["image_path", "assets/icons/catalan_flag.png"]
 ]);
 
 function get_name(button) {

@@ -3,7 +3,7 @@
 const CONFIG = {
 
     /* General */
-    language: 'es',
+    language: 'en',
 
     /* Modes */
     dark_mode: true,
