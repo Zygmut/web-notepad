@@ -18,11 +18,11 @@ addEvent(document.getElementById("open-btn"), "click", function () {
 });
 
 addEvent(document.getElementById("save-btn"), "click", function () {
-  var filename = document.getElementById("file-name").value + ".txt";
+  var filename = document.getElementById("file-name").value;
   if (filename == "") {
-    filename = "untitled.txt";
+    filename = "untitled";
   }
-  document.getElementById("save-btn").download = filename;
+  document.getElementById("save-btn").download = filename + ".txt";
   document.getElementById("save-btn").href =
     "data:text/octet-stream," +
     escape(document.getElementById("edit-box").value);
