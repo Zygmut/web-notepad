@@ -1,18 +1,18 @@
 /* DEFAULT Variables */
 :root {
   /* Default theme */
-  --accent: #61b0f1; /* Hover color */
-  --bg: #f5f5f5; /* Background color */
-  --sbg: #e4e6e6; /* Cards color */
-  --fg: #3a3a3a; /* Foreground color */
-  --sfg: #8a8a8a; /* Sceondary Foreground color */
+  --accent: #61b0f1;          /* Hover color */
+  --bg: #f5f5f5;              /* Background color */
+  --sbg: #e4e6e6;             /* Cards color */
+  --fg: #3a3a3a;              /* Foreground color */
+  --sfg: #8a8a8a;             /* Sceondary Foreground color */
 
   /* Alt theme */
-  --alt_accent: #61b0f1; /* Hover color */
-  --alt_bg: #19171a; /* Background color */
-  --alt_sbg: #201e21; /* Cards color */
-  --alt_fg: #d8dee9; /* Foreground color */
-  --alt_sfg: #3a3a3a; /* Secondary Foreground color */
+  --alt_accent: #61b0f1;      /* Hover color */
+  --alt_bg: #19171a;          /* Background color */
+  --alt_sbg: #201e21;         /* Cards color */
+  --alt_fg: #d8dee9;          /* Foreground color */
+  --alt_sfg: #3a3a3a;         /* Secondary Foreground color */
 
   --font_family: "Arial";
   --font_size: 25px;
@@ -22,11 +22,11 @@
 }
 
 .darktheme {
-  --accent: var(--alt_accent); /* Hover color */
-  --bg: var(--alt_bg); /* Background color */
-  --sbg: var(--alt_sbg); /* Cards color */
-  --fg: var(--alt_fg); /* Foreground color */
-  --sfg: var(--alt_sfg); /* Secondary Foreground color */
+  --accent: var(--alt_accent);  /* Hover color */
+  --bg: var(--alt_bg);          /* Background color */
+  --sbg: var(--alt_sbg);        /* Cards color */
+  --fg: var(--alt_fg);          /* Foreground color */
+  --sfg: var(--alt_sfg);        /* Secondary Foreground color */
 }
 
 html,
@@ -150,7 +150,7 @@ body {
 }
 
 /* Text box */
-#edit-box {
+#edit_box {
   transition: var(--animation_speed) ease-in-out;
   background-color: var(--sbg);
   color: var(--fg);

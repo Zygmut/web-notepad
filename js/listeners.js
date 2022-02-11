@@ -1,14 +1,14 @@
 addEvent(window, "unload", save_settings);
 
-addEvent(document.getElementById("edit-box"), "input", function () {
-  localStorage.setItem("edit-box", document.getElementById("edit-box").value);
+addEvent(document.getElementById("edit_box"), "input", function () {
+  localStorage.setItem("edit_box", document.getElementById("edit_box").value);
 });
 
-addEvent(document.getElementById("file-name"), "input", function(){
-  localStorage.setItem("file-name", document.getElementById("file-name").value);
+addEvent(document.getElementById("file_name"), "input", function(){
+  localStorage.setItem("file_name", document.getElementById("file_name").value);
 });
 
-addEvent(document.getElementById("open-btn"), "click", function () {
+addEvent(document.getElementById("open_btn"), "click", function () {
   if (window.File && window.FileReader && window.FileList && window.Blob) {
     document.getElementById("open-dilg").click();
   } else {
@@ -17,20 +17,20 @@ addEvent(document.getElementById("open-btn"), "click", function () {
   return false;
 });
 
-addEvent(document.getElementById("save-btn"), "click", function () {
-  var filename = document.getElementById("file-name").value;
+addEvent(document.getElementById("save_btn"), "click", function () {
+  var filename = document.getElementById("file_name").value;
   if (filename == "") {
     filename = "untitled";
   }
-  document.getElementById("save-btn").download = filename + ".txt";
-  document.getElementById("save-btn").href =
+  document.getElementById("save_btn").download = filename + ".txt";
+  document.getElementById("save_btn").href =
     "data:text/octet-stream," +
-    escape(document.getElementById("edit-box").value);
+    escape(document.getElementById("edit_box").value);
 });
 
 addEvent(document.getElementById("open-dilg"), "change", open_file);
 
-addEvent(document.getElementById("dark-btn"), "click", function () {
+addEvent(document.getElementById("dark_btn"), "click", function () {
   darkTheme = localStorage.getItem("dark_mode");
   if (darkTheme === 'true') {
     disableDark();
@@ -39,7 +39,7 @@ addEvent(document.getElementById("dark-btn"), "click", function () {
   }
 });
 
-addEvent(document.getElementById("ico-btn"), "click", function () {
+addEvent(document.getElementById("ico_btn"), "click", function () {
   iconMode = localStorage.getItem("icon_mode");
   if (iconMode === 'true') {
     disableIco();

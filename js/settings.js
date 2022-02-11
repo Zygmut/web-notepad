@@ -1,4 +1,4 @@
-var save_elements = ['file-name', 'edit-box']
+var save_elements = ['file_name', 'edit_box']
 
 function save_settings() {
     for (let i = 0; i < save_elements.length; i++) {

@@ -1,5 +1,5 @@
 // Store the theme
-const themeToggle = document.getElementById("dark-btn");
+const themeToggle = document.getElementById("dark_btn");
 
 // Apply Dark theme
 const enableDark = () => {
