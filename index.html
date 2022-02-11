@@ -23,7 +23,7 @@
       <a class="button" id="save_btn" title="Ctrl-S">
         <i class="icon" icon-name="save"></i>save_btn</a>
 
-      <input type="text" placeholder="file_name" id="file_name">
+      <input type="text" name="file_name" placeholder="file_name" id="file_name">
     </div>
     <div class="topnav-right">
       <div class="dropdown">
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <textarea id="edit_box" placeholder="Type Here..." autofocus></textarea>
+  <textarea id="edit_box" placeholder="" autofocus></textarea>
 
   <!-- config -->
   <script src="config.js"></script>
@@ -54,9 +54,8 @@
   <script src="js/language.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/icon_mode.js"></script>
-  <script>
-    lucide.createIcons();
-  </script>
+  <script>lucide.createIcons();</script>
+  <script>set_names()</script>
 </body>
 
 </html>
