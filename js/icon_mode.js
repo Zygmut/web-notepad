@@ -1,5 +1,4 @@
 // Store icon mode
-let iconMode = localStorage.getItem("icon_mode");
 const iconToggle = document.getElementById("ico-btn");
 let icoItems = ["open-btn", "save-btn", "menu-btn", "dark-btn", "ico-btn"];
 
@@ -25,7 +24,7 @@ const disableIco = () => {
 };
 
 // Toggle ico
-if (iconMode) {
+if (localStorage.getItem("icon_mode") == 'true') {
   // Temporarily disable transitions when changing theme on startup
   document.body.classList.add("notransition");
   enableIco();

@@ -1,11 +1,10 @@
 // Store the theme
-let darkTheme = localStorage.getItem("dark_theme");
 const themeToggle = document.getElementById("dark-btn");
 
 // Apply Dark theme
 const enableDark = () => {
   document.body.classList.add("darktheme");
-  localStorage.setItem("dark_theme", true);
+  localStorage.setItem("dark_mode", true);
   themeToggle.innerHTML = `<i class="icon" id="dark" icon-name="sun"></i>`;
   if (localStorage.getItem("icon_mode") === 'true') {
     themeToggle.innerHTML += " ";
@@ -18,7 +17,7 @@ const enableDark = () => {
 // Remove Dark theme
 const disableDark = () => {
   document.body.classList.remove("darktheme");
-  localStorage.setItem("dark_theme", false);
+  localStorage.setItem("dark_mode", false);
   themeToggle.innerHTML = `<i class="icon" id="dark" icon-name="moon"></i>`;
   if (localStorage.getItem("icon_mode") === 'true') {
     themeToggle.innerHTML += " ";
@@ -29,7 +28,7 @@ const disableDark = () => {
 };
 
 //Toggle theme
-if (darkTheme) {
+if (localStorage.getItem("dark_mode") === 'true') {
   // Temporarily disable transitions when changing theme on startup
   document.body.classList.add("notransition");
   enableDark();

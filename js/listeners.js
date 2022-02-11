@@ -31,7 +31,7 @@ addEvent(document.getElementById("save-btn"), "click", function () {
 addEvent(document.getElementById("open-dilg"), "change", open_file);
 
 addEvent(document.getElementById("dark-btn"), "click", function () {
-  darkTheme = localStorage.getItem("dark_theme");
+  darkTheme = localStorage.getItem("dark_mode");
   if (darkTheme === 'true') {
     disableDark();
   } else {

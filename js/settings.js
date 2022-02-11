@@ -19,11 +19,38 @@ function load_settings() {
     }
 }
 
+function modify_css(property, set){
+    document.documentElement.style.setProperty(property, set);
+}
+
 function load_config(){
-    Object.keys(CONFIG).forEach(function(key){
-        console.log(CONFIG[key]);
-    })
-    document.documentElement.style.setProperty('--animation_speed', CONFIG.animation_speed);
+    // Language
+
+    // Dark and icon mode
+    localStorage.setItem("dark_mode", CONFIG.dark_mode);
+    localStorage.setItem("icon_mode", CONFIG.icon_mode);
+
+    /* CSS */
+    // Default theme
+    modify_css('--accent', CONFIG.accent);
+    modify_css('--bg', CONFIG.bg);
+    modify_css('--sbg', CONFIG.sbg);
+    modify_css('--fg', CONFIG.fg);
+    modify_css('--sfg', CONFIG.sfg);
+
+    // Alt theme
+    modify_css('--alt_accent', CONFIG.alt_accent);
+    modify_css('--alt_bg', CONFIG.alt_bg);
+    modify_css('--alt_sbg', CONFIG.alt_sbg);
+    modify_css('--alt_fg', CONFIG.alt_fg);
+    modify_css('--alt_sfg', CONFIG.alt_sfg);
+
+    // Misc
+    modify_css('--font_family', CONFIG.font_family);
+    modify_css('--font_size', CONFIG.font_size);
+    modify_css('--animation_speed', CONFIG.animation_speed);    
+    modify_css('--icon_size', CONFIG.icon_size);
+    modify_css('--navbar_height', CONFIG.navbar_height);
 }
 
 if (window.localStorage) {
