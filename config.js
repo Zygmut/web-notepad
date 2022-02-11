@@ -3,11 +3,11 @@
 const CONFIG = {
 
     /* General */
-    language: 'en',
+    language: 'cat',
 
     /* Modes */
-    dark_mode: false,
-    icon_mode: true,
+    dark_mode: true,
+    icon_mode: false,
 
     /* Visual */
     // Default theme

@@ -9,7 +9,7 @@ const enableDark = () => {
   if (localStorage.getItem("icon_mode") === 'true') {
     themeToggle.innerHTML += " ";
   } else {
-    themeToggle.innerHTML += "Light";
+    themeToggle.innerHTML += get_name("light_btn");
   }
   lucide.createIcons();
 };
@@ -22,7 +22,7 @@ const disableDark = () => {
   if (localStorage.getItem("icon_mode") === 'true') {
     themeToggle.innerHTML += " ";
   } else {
-    themeToggle.innerHTML += "Dark";
+    themeToggle.innerHTML += get_name("dark_btn");
   }
   lucide.createIcons();
 };

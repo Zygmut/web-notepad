@@ -1,50 +1,43 @@
 // icons https://www.flaticon.com/packs/flags-18?style_id=15&family_id=3&group_id=1
 
-var buttons = ["open_btn", "save_btn", "menu_btn", "dark_btn", "light_btn", "icon_btn"]
+const lang_es = new Map([
+  ["open_btn", "Abrir"],
+  ["save_btn", "Guardar"],
+  ["menu_btn", "Menu"],
+  ["dark_btn", "Oscuro"],
+  ["light_btn", "Brillante"],
+  ["ico_btn", "Iconos"],
+  ["lan_btn", "Español"]
+]);
 
-let hash_es = {
-    
-}
+const lang_en = new Map([
+  ["open_btn", "Open"],
+  ["save_btn", "Save"],
+  ["menu_btn", "Menu"],
+  ["dark_btn", "Dark"],
+  ["light_btn", "Light"],
+  ["ico_btn", "Icons"],
+  ["lan_btn", "English"]
+]);
 
-var lang_es = ["Abir",
-               "Guardar",
-               "Menu",
-               "Oscuro",  
-               "Brillante",
-               "Iconos"]
+const lang_cat = new Map([
+  ["open_btn", "Obre"],
+  ["save_btn", "Salva"],
+  ["menu_btn", "Menu"],
+  ["dark_btn", "Oscur"],
+  ["light_btn", "Shiny"], // Gracias Alberto "el chino"
+  ["ico_btn", "Icones"],
+  ["lan_btn", "Català"]
+]);
 
-var lang_en = ["Open",
-               "Save",
-               "Menu",
-               "Dark", // Needs to versions 
-               "Light",
-               "Icons",
-]
-
-var lang_cat = ["Obre",
-                "Salva",
-                "Menu",
-                "Oscur", // Needs to versions 
-                "Shiny", // needs to change : Alberto "el chino"
-                "Icones",
-]
-
-function get_lang() {
+function get_name(button) {
   switch (localStorage.getItem("language")) {
     case "es":
-      lang = lang_es;
-      break;
+      return lang_es.get(button);
     case "en":
-      lang = lang_en;
-      break;
+      return lang_en.get(button);
     case "cat":
     default:
-      lang = lang_cat;
-      break;
+      return lang_cat.get(button);  
   }
-  return lang
-}
-
-function get_name(button){
-    lang = get_lang();
 }
