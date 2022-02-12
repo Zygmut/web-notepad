@@ -52,17 +52,3 @@ addEvent(document.getElementById("lan_btn"), "click", function () {
   next_lang();
   set_names();
 });
-
-/* Enable shortucts. It doesn't work to enable/disable?
-addEvent(document, "keydown", function (e) {
-  if (e.ctrlKey) {
-    if (e.keyCode === 83) {
-      document.getElementById("save_btn").click();
-      e.preventDefault();
-    } else if (e.keyCode === 79) {
-      console.log(CONFIG.enable_shortcuts);
-      document.getElementById("open_btn").click();
-      e.preventDefault();
-    }
-  }
-}); */

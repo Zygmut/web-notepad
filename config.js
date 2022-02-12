@@ -8,6 +8,8 @@ const CONFIG = {
     /* Modes */
     dark_mode: true,
     icon_mode: false,
+    zen_mode: false,
+    enable_shortcuts: true, 
 
     /* Visual */
     // Default theme
@@ -31,5 +33,4 @@ const CONFIG = {
     icon_size: '3vh',
     navbar_height: '50px',
 
-    enable_shortcuts: false
 }

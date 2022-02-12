@@ -5,8 +5,7 @@ let icoItems = [
   "save_btn",
   "menu_btn",
   "dark_btn",
-  "ico_btn",
-  "import_btn"
+  "ico_btn"
   ];
 
 // List of languages

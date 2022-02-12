@@ -17,10 +17,19 @@ const enableIco = () => {
 const disableIco = () => {
   localStorage.setItem("icon_mode", false);
   for (let i = 0; i < icoItems.length; i++) {
-    document.getElementById(icoItems[i]).innerHTML =
-      document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
-      "</svg>" +
-      get_name(icoItems[i]);
+      inner = document.getElementById(icoItems[i]).innerHTML.split("</svg>")[0] +
+      "</svg>"
+      if (icoItems[i] === "dark_btn"){
+        if (localStorage.getItem("dark_mode") === 'true'){
+          inner += get_name("light_btn");
+        }else{
+          inner += get_name("dark_btn");
+        }
+      }else{
+        inner += get_name(icoItems[i]);
+      }
+    
+      document.getElementById(icoItems[i]).innerHTML = inner;
   }
   
   // Change flag
