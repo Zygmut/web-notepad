@@ -1,12 +1,5 @@
 // Store icon mode
 const iconToggle = document.getElementById("ico_btn");
-let icoItems = [
-  "open_btn",
-  "save_btn",
-  "menu_btn",
-  "dark_btn",
-  "ico_btn"
-  ];
 
 // Apply icon mode
 const enableIco = () => {

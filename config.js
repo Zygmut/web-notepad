@@ -29,5 +29,7 @@ const CONFIG = {
     font_size: '25px',
     animation_speed: '0.3s',
     icon_size: '3vh',
-    navbar_height: '50px'
+    navbar_height: '50px',
+
+    enable_shortcuts: false
 }
