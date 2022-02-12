@@ -1,7 +1,8 @@
-function zen_mode() {
+function zen_toggle() {
   localStorage.setItem("zen_mode", CONFIG.zen_mode);
 
-  if (CONFIG.zen_mode === "true") {
-    document.getElementById("menu_btn").innerHTML = "";
+  if (localStorage.getItem("zen_mode") === "true") {
+    var elem = document.getElementById("menu_btn");
+    elem.parentNode.removeChild(elem);
   }
 }
