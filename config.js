@@ -3,7 +3,7 @@
 const CONFIG = {
 
     /* General */
-    language: 'en',
+    language: 'es',
 
     /* Modes */
     dark_mode: true,
@@ -11,11 +11,11 @@ const CONFIG = {
 
     /* Visual */
     // Default theme
-    accent: '#61b0f1',  /* Hover color */
-    bg: '#f5f5f5',      /* Background color */
-    sbg: '#e4e6e6',     /* Cards color */
-    fg: '#3a3a3a',      /* Foreground color */
-    sfg: '#8a8a8a',     /* Sceondary Foreground color */
+    accent: '#61b0f1',      /* Hover color */
+    bg: '#f5f5f5',          /* Background color */
+    sbg: '#e4e6e6',         /* Cards color */
+    fg: '#3a3a3a',          /* Foreground color */
+    sfg: '#8a8a8a',         /* Sceondary Foreground color */
 
     // Alt theme
     alt_accent: '#61b0f1',  /* Hover color */

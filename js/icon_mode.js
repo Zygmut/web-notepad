@@ -31,7 +31,7 @@ const disableIco = () => {
   }
   
   // Change flag
-   document.getElementById("lan_btn").innerHTML = `<img class="icon" src="` + get_name("image_path") + `">` + get_name("lan_btn")
+  document.getElementById("lan_btn").innerHTML = `<img class="icon" src="` + get_name("image_path") + `">` + get_name("lan_btn")
 };
 
 // Toggle ico

@@ -47,3 +47,8 @@ addEvent(document.getElementById("ico_btn"), "click", function () {
     enableIco();
   }
 });
+
+addEvent(document.getElementById("lan_btn"), "click", function(){
+  next_lang();
+  set_names();
+});
