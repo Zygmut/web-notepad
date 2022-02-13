@@ -6,10 +6,9 @@ const CONFIG = {
     language: 'es',
 
     /* Modes */
-    dark_mode: true,
-    icon_mode: false,
-    zen_mode: false,
-    enable_shortcuts: true, 
+    dark_mode: true,  // Dark or light theme
+    icon_mode: false, // Show only icons
+    zen_mode: true,  // Disable menu button
 
     /* Visual */
     // Default theme
