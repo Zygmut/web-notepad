@@ -1,75 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Notepad</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel=" shortcut icon" type="image/png" href="assets/favicon.png" />
-    <link rel="stylesheet" href="app.css" />
-    <script src="https://unpkg.com/lucide@latest"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <body>
-    <div class="topnav">
-      <div class="topnav-left">
-        <input id="open-dilg" type="file" name="files[]" />
+  <title>Notepad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel=" shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="app.css" />
+</head>
 
-        <a class="button" id="open_btn" title="Ctrl-O">
-          <i class="icon" icon-name="folder-open"></i>open_btn</a
-        >
-        <a class="button" id="save_btn" title="Ctrl-S">
-          <i class="icon" icon-name="save"></i>save_btn</a
-        >
+<body>
+  <div class="topnav">
+    <div class="topnav-left">
+      <input id="open-dilg" type="file" name="files[]" />
 
-        <input
-          type="text"
-          name="file_name"
-          placeholder="file_name"
-          id="file_name"
-        />
-      </div>
-      <div class="topnav-right">
-        <div class="dropdown">
-          <button class="button" id="menu_btn">
-            <i class="icon" icon-name="menu"></i
-            >menu_btn
-          </button>
-          <div class="dropdown-content">
-            <a class="button" id="dark_btn">
-              <i class="icon" icon-name="moon"></i>Dark mode</a
-            >
-            <a class="button" id="ico_btn">
-              <i class="icon" icon-name="inspect"></i>Icon mode</a
-            >
-            <a class="button" id="lan_btn">
-              <img class="icon" src="assets/icons/catalan_flag.png"></a
-            >
-          </div>
+      <a class="button" id="open_btn" title="Ctrl-O">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 17l2-5h14l-3 8a2 2 0 01-2 1H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h7a2 2 0 012 2v4"></path>
+        </svg>
+        </i></a>
+      <a class="button" id="save_btn" title="Ctrl-S">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"></path>
+          <polyline points="17 21 17 13 7 13 7 21"></polyline>
+          <polyline points="7 3 7 8 15 8"></polyline>
+        </svg>
+      </a>
+
+      <input type="text" name="file_name" placeholder="file_name" id="file_name" />
+    </div>
+    <div class="topnav-right">
+      <div class="dropdown">
+        <button class="button" id="menu_btn">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+        <div class="dropdown-content">
+          <a class="button" id="dark_btn">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          </a>
+          <a class="button" id="ico_btn">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 11V4a2 2 0 00-2-2H4a2 2 0 00-2 2v13a2 2 0 002 2h7"></path>
+              <path d="M12 12l4.166 10 1.48-4.355L22 16.166 12 12z"></path>
+              <path d="M18 18l3 3"></path>
+            </svg>
+            </a>
+          <a class="button" id="lan_btn">
+            <img class="icon" src="assets/icons/catalan_flag.png"></a>
         </div>
       </div>
     </div>
+  </div>
 
-    <textarea id="edit_box" placeholder="" autofocus></textarea>
+  <textarea id="edit_box" placeholder="" autofocus></textarea>
 
-    <!-- config -->
-    <script src="config.js"></script>
+  <!-- config -->
+  <script src="config.js"></script>
 
-    <!-- Scripts -->
-    <script src="https://apis.google.com/js/client.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/utils.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/listeners.js"></script>
-    <script src="js/language.js"></script>
-    <script src="js/theme.js"></script>
-    <script src="js/icon_mode.js"></script>
-    <script src="js/zen_mode.js"></script>
-    <script>
-      lucide.createIcons();
-      set_names();
-      zen_toggle();
-    </script>
-  </body>
+  <!-- Scripts -->
+  <script src="https://apis.google.com/js/client.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/listeners.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/icon_mode.js"></script>
+  <script src="js/zen_mode.js"></script>
+  <script>
+    set_names();
+    zen_toggle();
+  </script>
+</body>
+
 </html>

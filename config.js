@@ -3,12 +3,12 @@
 const CONFIG = {
 
     /* General */
-    language: 'es',
+    language: 'en',
 
     /* Modes */
     dark_mode: true,  // Dark or light theme
     icon_mode: false, // Show only icons
-    zen_mode: true,  // Disable menu button
+    zen_mode: false,  // Disable menu button
 
     /* Visual */
     // Default theme

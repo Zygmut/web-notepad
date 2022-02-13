@@ -38,11 +38,7 @@ const disableIco = () => {
 
 // Toggle ico
 if (localStorage.getItem("icon_mode") === "true") {
-  // Temporarily disable transitions when changing theme on startup
-  document.body.classList.add("notransition");
   enableIco();
-  document.body.offsetHeight; // Trigger reflow to flush CSS changes
-  document.body.classList.remove("notransition");
 } else {
   disableIco();
 }

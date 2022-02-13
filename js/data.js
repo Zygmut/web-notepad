@@ -43,8 +43,8 @@ const lang_cat = new Map([
   ["open_btn", "Obre"],
   ["save_btn", "Salva"],
   ["menu_btn", "Menu"],
-  ["dark_btn", "Oscur"],
-  ["light_btn", "Shiny"], // Gracias Alberto "el chino"
+  ["dark_btn", "Fosc"],
+  ["light_btn", "Brillant"], // Gracias Alberto "el chino"
   ["ico_btn", "Icones"],
   ["lan_btn", "Català"],
   ["import_btn", "Importar"],
