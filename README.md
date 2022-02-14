@@ -66,11 +66,12 @@ The rest of variables are color codes for light and dark mode respectivelly, so 
   
 ## ✍️ Who can contribute?
 
-Really anyone. I learned a lot doing this project, so I encourage other people to see how this web works and If you want to exapnd on the language list or add new features, go for it!
+Really anyone. I learned a lot doing this project, so I encourage other people to see how this web works and If you want to expand on the language list or add new features, go for it!
 
 ## 📚 Actual dev state
 
 You can see at any time what I'm working on with [this link](https://sharing.clickup.com/b/h/6-162765235-2/4865d67c0161232), that will lead you to a clickup board 
+
 ## 🙇 Inspiration
 
 - [Rahif's Notepad](https://github.com/Muhammed-Rahif/Notepad)
