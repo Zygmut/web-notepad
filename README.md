@@ -1,5 +1,5 @@
 <p align="center"> 
-  <a href="zygmut.github.io/web-notepad" rel="noopener">
+  <a href="https://zygmut.github.io/web-notepad/" rel="noopener">
     <img width=115px height=115px src="assets/favicon.png" alt="Notepad">
   </a>
 </p>
