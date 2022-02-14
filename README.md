@@ -37,12 +37,12 @@ At this point in development, we support the following languages:
 
 These instructions will get you started on running this web locally to take full advantage of the configuration
 
-## 📩 Installation
+### 📩 Installation
 
 - Clone this repository via de `clone` command or download de latest release 
 - Open the `index.html` with your favorite web browser
 
-## ⚙️ Configuration
+### ⚙️ Configuration
 
 The configuration file can be found in the main folder, besides the `ìndex.html`. In it you'll find the list of all posible modificable aspects (without touching the code) that I've thought. Let's go one by one:
 
